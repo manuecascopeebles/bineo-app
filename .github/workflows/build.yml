@@ -54,6 +54,7 @@ jobs:
       - name: build archive
         run: |
           cd bineo-mobile/ios
+          flutter pub get
           pod install
           xcodebuild -scheme "Runner" \
           -archivePath $RUNNER_TEMP/runner.xcarchive \
