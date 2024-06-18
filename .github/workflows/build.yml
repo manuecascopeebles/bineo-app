@@ -50,6 +50,7 @@ jobs:
       - name: build archive
         run: |
           cd bineo-mobile/ios
+          pod install
           xcodebuild -scheme "Runner" \
           -archivePath $RUNNER_TEMP/runner.xcarchive \
           -sdk iphoneos \
