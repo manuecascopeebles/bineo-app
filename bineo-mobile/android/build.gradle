@@ -1,0 +1,43 @@
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withReader('UTF-8') { reader ->
+        localProperties.load(reader)
+    }
+}
+def artifactory_username = localProperties.getProperty('artifactory_username')
+def artifactory_password = localProperties.getProperty('artifactory_password')
+
+if (artifactory_username == null || artifactory_password == null) {
+    // local.properties not set
+    println 'local.properties not set'
+    artifactory_username = ''
+    artifactory_password = ''
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+        maven {
+        url "https://repo.incode.com/artifactory/libs-incode-welcome"
+        credentials {
+            username = "${artifactory_username}"
+            password = "${artifactory_password}"
+        }
+   }
+    }
+}
+
+rootProject.buildDir = '../build'
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
+    project.evaluationDependsOn(':app')
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CADisableMinimumFrameDurationOnPhone</key>
+	<true/>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>bineo</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>bineo</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(FLUTTER_BUILD_NAME)</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>$(FLUTTER_BUILD_NUMBER)</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Por seguridad y por disposición oficial, necesitamos conocer y almacenar tu geolocalización para darte acceso a la app. Por favor, actívala desde la configuración de tu celular o permítelo a continuación para poder avanzar con el proceso.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Por seguridad y por disposición oficial, necesitamos conocer y almacenar tu geolocalización para darte acceso a la app. Por favor, actívala desde la configuración de tu celular o permítelo a continuación para poder avanzar con el proceso.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Por seguridad y por disposición oficial, necesitamos conocer y almacenar tu geolocalización para darte acceso a la app. Por favor, actívala desde la configuración de tu celular o permítelo a continuación para poder avanzar con el proceso.</string>
+	<key>NSUserTrackingUsageDescription</key>
+	<string>Esto permite que bineo te muestre más contenido personalizado y relevante para ti. Podrás cambiar la configuración cuando quieras desde la sección ajustes de tu celular.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Para poder continuar, necesitamos tu permiso para acceder a la cámara de tu dispositivo. La cámara se usará para escanear y verificar la documentación necesaria. Este proceso es seguro y garantiza la protección de tu información personal.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Para poder continuar, necesitamos tu permiso para acceder al mic de tu dispositivo.</string>
+	<key>NSFaceIDUsageDescription</key>
+	<string>Para habilitar tu Face ID, es necesario que nos des permiso</string>
+	<key>UIApplicationSupportsIndirectInputEvents</key>
+	<true/>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+    	<string>cydia</string>
+  		<string>undecimus</string>
+  		<string>sileo</string>
+  		<string>zbra</string>
+  		<string>filza</string>
+  		<string>activator</string>
+	</array>
+</dict>
+</plist>
