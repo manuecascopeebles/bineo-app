@@ -136,6 +136,7 @@ jobs:
           yes | sdkmanager --licenses
           sdkmanager --list
           cat android/gradle/wrapper/gradle-wrapper.properties
+          cat android/local.properties
           # flutter pub get
           # flutter build apk --debug
 
