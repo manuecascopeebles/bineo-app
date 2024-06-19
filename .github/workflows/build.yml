@@ -127,7 +127,9 @@ jobs:
         
           cd /Users/runner/work/bineo-app/bineo-app/bineo-mobile
           touch .env
-          echo "${{ secrets.ENV_DATA_FILE }}" >> .env
+          echo "${{ secrets.ENV_DATA_FILE }}" | while IFS= read -r line; do
+            echo "\"$line\"" >> .env
+          done
           touch android/local.properties
           echo "${{ secrets.GRADLE_PROPERTIES }}" >> android/local.properties
           sdkmanager --install "platform-tools" "platforms;android-34" "build-tools;35.0.0"
