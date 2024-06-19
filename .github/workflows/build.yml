@@ -111,7 +111,7 @@ jobs:
           java-version: '17.x'
       - uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.3.10'
+          flutter-version: '3.2.2'
       - run: flutter --version
       - name: Run Flutter Doctor
         run: flutter doctor -v
@@ -134,9 +134,10 @@ jobs:
           echo "${{ secrets.GRADLE_PROPERTIES }}" >> android/local.properties
           sdkmanager --install "platform-tools" "platforms;android-34" "build-tools;35.0.0"
           yes | sdkmanager --licenses
-
-          flutter pub get
-          flutter build apk --debug
+          sdkmanager --list
+          cat android/gradle/wrapper/gradle-wrapper.properties
+          # flutter pub get
+          # flutter build apk --debug
 
       - name: Upload application
         uses: actions/upload-artifact@v3
